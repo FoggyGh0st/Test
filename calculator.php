@@ -7,7 +7,7 @@ function calculator($argv): string
     $sum = 0;
     $fullcheck = '0123456789+-';
     $numbercheck = '0123456789';
-    foreach (str_split($argv[1] as $char))
+    foreach (str_split($argv[1]) as $char)
     {
         if(!(strpos($fullcheck, $char)))
         {
@@ -35,25 +35,25 @@ function calculator($argv): string
         {
             if ($value === '-')
             {
-            $sum -= $numberarr[$key] - $numberarr[key-1];
+            $sum -= $numberarr[$key] - $numberarr[$key-1];
             }
             if ($value === '+')
             {
-            $sum -= $numberarr[$key] + $numberarr[key+1];
+            $sum -= $numberarr[$key] + $numberarr[$key+1];
             }
         }
         else 
         {
-            if ($ === '+') 
+            if ($value === '+') 
             {
-                $sum += $numberArr[$key + 1];
+                $sum += $numberarr[$key + 1];
             }
             if ($value === '-') 
             {
-                $sum -= $numberArr[$key + 1];
+                $sum -= $numberarr[$key + 1];
             }
         }
     }
-    return ($);
+    return ($sum);
 }
 echo calculator($argv);
