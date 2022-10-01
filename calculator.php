@@ -9,7 +9,7 @@ function calculator($argv): string
     $numbercheck = '0123456789';
     foreach (str_split($argv[1]) as $char)
     {
-        if(!(strpos($numbercheck, $char)))
+        if(!(strpos($fullcheck, $char)))
         {
             return 'Error!';
 
