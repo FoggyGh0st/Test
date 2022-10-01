@@ -39,7 +39,7 @@ function calculator($argv): string
             }
             if ($value === '+')
             {
-            $sum -= $numberarr[$key] + $numberarr[$key+1];
+            $sum += $numberarr[$key] + $numberarr[$key+1];
             }
         }
         else 
