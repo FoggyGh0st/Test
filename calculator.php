@@ -41,4 +41,4 @@ function calculator(string $tempString): string
     return ($sum);
 }
 echo calculator( $tempString);
-calculator($argv[1], $argv[2]);
+calculator($argv[1]);
