@@ -8,13 +8,13 @@ function sumTime(string $getTime1, string $getTime2): string
     $result = [];
     foreach (str_split($getTime1) as $char) {
         if (!(strpos($fullCheck, $char))) {
-            return 'Input error!';
+            return 'error!';
         }
     }
     $dateOne = explode(':', $getTime1);
     foreach (str_split($getTime2) as $char) {
         if (!(strpos($fullCheck, $char))) {
-            return 'Input error!';
+            return 'error!';
         }
     }
     $dateTwo = explode(':', $getTime2);
