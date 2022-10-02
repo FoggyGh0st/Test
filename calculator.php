@@ -1,5 +1,5 @@
 <?php
-function calculator(string $tempString): string
+function calculator(string $getString): string
 {
     $numberArr = [];
     $sArr = [];
@@ -7,7 +7,7 @@ function calculator(string $tempString): string
     $sum = 0;
     $fullCheck = '0123456789+-';
     $numberCheck = '0123456789';
-    foreach (str_split($tempString) as $char) {
+    foreach (str_split($getString) as $char) {
         if (!(strpos($fullCheck, $char))) {
             return 'Error!';
         } else {
@@ -40,5 +40,4 @@ function calculator(string $tempString): string
     }
     return ($sum);
 }
-echo calculator( $tempString);
-calculator($argv[1]);
+echo calculator($argv[1]);
