@@ -1,13 +1,14 @@
 <?php
-function calculator( string $tempString): string
+function calculator(string $tempString): string
 {
     $numberArr = [];
+    $argv = [];
     $sArr = [];
     $tempString = '';
     $sum = 0;
     $fullCheck = '0123456789+-';
     $numberCheck = '0123456789';
-    foreach (str_split($tempString) as $char) {
+    foreach (str_split($argv[1]) as $char) {
         if (!(strpos($fullCheck, $char))) {
             return 'Error!';
         } else {
